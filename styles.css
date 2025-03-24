@@ -1,0 +1,427 @@
+/* Define CSS variables globally */
+:root {
+  --primary-color: #6200ea;
+  /* Main purple color */
+  --secondary-color: #e0e0ff;
+  /* Light background color for sections */
+  --background-color: #f4f4f9;
+  /* Background color for the body */
+  --text-color: #333;
+  /* General text color */
+  --button-text-color: white;
+  /* Text color for buttons */
+  --hover-color: #4500b5;
+  /* Button hover color */
+}
+
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #828282;
+  color: var(--text-color);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  color: white;
+  background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm15cmdwNW02MWMxbmVtancwNmVjZHF5c3FkNjZsNWlyYzgwMjkwcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2Sq2zPVz6FLD6Z5S/giphy.gif");
+  /* Path to your background image */
+  background-size: cover;
+  /* Make the background image cover the entire header */
+  background-position: center;
+  /* Center the background image */
+  background-repeat: no-repeat;
+  /* Prevent the background from repeating */
+  height: 200px;
+}
+
+.header-content {
+  text-align: center;
+  /* Center-align the text within its area */
+  flex-grow: 1;
+  /* Take up remaining space so that it stays centered */
+}
+
+.header-content h1,
+.header-content p {
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+  /* Adds a subtle shadow to the text */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.home-button {
+  text-decoration: none;
+  /* Remove underline */
+  color: white;
+  /* Button text color */
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  text-decoration: underline;
+  /* Add underline on hover for better feedback */
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: cursive; 
+  font-size: xx-large;
+}
+
+.post {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #777;
+  /* Light gray color for the text */
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.post h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.post p {
+  margin: 0 0 1rem 0;
+}
+
+.post a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  /* Enables flexbox */
+  flex-direction: column;
+  /* Stack children vertically */
+  align-items: center;
+  /* Centers children horizontally */
+  text-align: center;
+  /* Ensures text elements (like <h2> and <p>) are centered */
+}
+
+.about p {
+  line-height: 1.6;
+  /* Improve readability */
+}
+
+.back-button {
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.blog-post-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 400px;
+  /* Changed the size of the picture to the double */
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.post-image-speech-image{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px
+}
+
+
+h2,
+h3 {
+  margin-top: 1rem;
+}
+
+.footer {
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.footer-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Text input style */
+.footer-footer input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Button styling */
+.footer-footer button {
+  padding: 0.8rem 1.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.footer-footer button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* Paragraph for submitted text */
+.footer-footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Audio container styling */
+.audio-container {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.technologies-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--hover-color);
+  /* Accent color for the heading */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow cards to wrap to new lines */
+  gap: 1.5rem;
+  /* Space between the cards */
+  justify-content: center;
+  /* Center the cards horizontally */
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 1.5rem);
+  /* 3 columns on large screens */
+  
+  /* Light background color */
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  text-decoration: none;
+  /* Remove underline from links */
+  color: var(--text-color);
+  /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  /* Subtle lift effect on hover */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+  /* Accent color for the card title */
+}
+
+
+.card {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  padding: 1rem;
+}
+
+.card:hover {
+  transform: rotateY(15deg) rotateX(5deg) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.H5P-container {
+  padding: 1rem; /* White padding around the iframe */
+  background-color: white; /* Ensures the padding appears white */
+ }
+ .H5P-iframe {
+  width: 100%; /* Always take full width */
+  aspect-ratio: 1.7; /* Maintain 16:9 aspect ratio */
+  border: none; /* Remove default iframe border */
+  display: block; /* Ensures no extra space below the iframe */
+ 
+ }
+
+ .H5P-container-memory {
+  padding: 1rem; /* White padding around the iframe */
+  background-color: white; /* Ensures the padding appears white */
+  overflow: hidden; /* Hides any overflow to remove the scrollbar */
+}
+ 
+ .H5P-iframe-memory {
+  width: 100%; /* Always take full width */
+  aspect-ratio: 1.5; /* Maintain 16:9 aspect ratio */
+  border: none; /* Remove default iframe border */
+  display: block; /* Ensures no extra space below the iframe */
+  overflow: hidden; /* Hides any overflow to remove the scrollbar */
+ 
+ }
+
+
+
+ /* Modal overlay */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* On top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust the width as needed */
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.gift-message {
+  font-size: 1.8rem;           /* Larger text size */
+  color: #ffffff;              /* White color */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, playful font */
+  text-align: center;          /* Centered text */
+  margin: 20px 0;              /* Some spacing above and below */
+  font-weight: 700;            /* Bold text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* A subtle shadow for extra flair */
+}
