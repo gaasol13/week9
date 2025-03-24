@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CALL Blog</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./synthesis.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-content">
+      <div class="text-container">
+        <h1>Computer Assisted language Learning</h1>
+        <p>by Andrea Miró</p>
+      </div>
+    </div>
+  </div>
+
+  <h2
+    style="font-family: 'Open Sans', sans-serif;font: size 2em; color: #2C3E50; text-align: center; margin-top: 30px;">
+    Welcome to our interactive lesson on SER
+    and ESTAR!
+  </h2>
+
+  <h2
+    style="font-family: 'Open Sans', sans-serif;font: size 2em; color: #2C3E50; text-align: center; margin-top: 30px;">
+    You will discover how to recognize and use each verb in the right context, engaging tasks and clear examples to help
+    you use these essential verbs with confidence. Get ready to take your Spanish to the next level!
+  </h2>
+
+
+
+
+
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/m2UWFQD1SB8?si=KCuM9mXgE_VFqcj-">
+  </iframe>
+
+
+</article>
+ 
